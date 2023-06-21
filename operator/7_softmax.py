@@ -1,28 +1,26 @@
 import torch
-from torch.nn import Conv2d, Module
+from torch.nn import Conv2d, Module, functional
 from utils import input_spatials, format_list
 import pdb
 import os
 
-class SimpleGemm(Module):
-    def __init__(self, width):
+class Model(Module):
+    def __init__(self):
         super().__init__()
-        self.w = torch.rand(width, width)
         
     def forward(self, x):
-        return x @ self.w
+        return torch.nn.functional.softmax(x)
 
 def work(workdir: str):
-    channels = [1, 64, 1024]
+    channels = [3]
     ret = []
     for c in channels:
         for spatial in input_spatials():
-            width = spatial[-1]  
-            m = SimpleGemm(width)
+            m = Model()
             input_ = torch.rand(1, c, spatial[0], spatial[1])
             out = m(input_)
             
-            key = 'gemm_{}'.format(format_list(input_.shape))
+            key = 'softmax_{}'.format(format_list(input_.shape))
             filename = os.path.join(workdir, '{}.onnx'.format(key))
             
             torch.onnx.export(model=m, args=(input_), f=filename, verbose=False, input_names=['input'], output_names=['output'])
@@ -32,5 +30,5 @@ def work(workdir: str):
     return ret
 
 if __name__ == '__main__':
-    ret = work('onnx/gemm/')
+    ret = work('onnx/softmax/')
     print(len(ret))

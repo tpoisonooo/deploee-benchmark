@@ -1,4 +1,4 @@
-# deploee-benchmar
+# deploee-benchmark
 硬件模型库芯片评测工具集
 
 [onnx 算子导出](./operator/)
@@ -15,4 +15,12 @@ ax620a 算子支持列表 https://pulsar-docs.readthedocs.io/zh_CN/latest/append
 | :-: | :-: | :-: | :-: |
 | 滑动窗口乘累加 | Conv | ConvTranspose | |
 | 矩阵乘 | Matmul | Gemm | |
-| 逐元素应用 lambda 函数 | Abs |  | |
+| binaryOp | Add | Div,Sub | |
+| 和 Conv 融合 | ArgMin | ArgMax,Softplus,BatchNormalization,HardSigmoid | |
+| 纯内存操作 | Concat | Clip,Pad,Slice,Tile |
+| 仅计算 meta 不处理数据 | Flatten | Identity,Reshape,Shape,SpaceToDepth,DepthToSpace,Unsqueeze |
+| 遍历 1 次tensor | Sigmoid | GlobalMaxPool,PRelu,ReLU,GlobalAvgPool,Tanh,PRelu,LeakyRelu,ReduceMax,ReduceMean,ReduceSum,Abs | |
+| 遍历 2 次或分段成 1 次 | Softmax | ReduceL2 | |
+| 图像操作 | Transpose | Resize，AveragePool,MaxPool | |
+
+* LSTM 应该是组合实现的
