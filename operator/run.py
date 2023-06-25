@@ -55,9 +55,9 @@ def convert_profile(model):
 def main(base):
     for root, dirs, files in os.walk(base):
         for file in files:
-            print('processing {}..'.format(file))
             reportpath = os.path.join('report', file)
             modelpath = os.path.join(root, file)
+            print('processing {}..'.format(modelpath))
 
             if os.path.exists(reportpath):
                 continue

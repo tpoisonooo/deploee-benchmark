@@ -20,7 +20,7 @@ ax620a 算子支持列表 https://pulsar-docs.readthedocs.io/zh_CN/latest/append
 | 纯内存操作 | Concat | Clip,Pad,Slice,Tile |
 | 仅计算 meta 不处理数据 | Flatten | Identity,Reshape,Shape,SpaceToDepth,DepthToSpace,Unsqueeze |
 | 遍历 1 次tensor | Sigmoid | GlobalMaxPool,PRelu,ReLU,GlobalAvgPool,Tanh,PRelu,LeakyRelu,ReduceMax,ReduceMean,ReduceSum,Abs | |
-| 遍历 2 次或分段成 1 次 | Softmax | ReduceL2 | |
+| 遍历 2 次或分段成 1 次 | Softmax | ReduceL2 | 转换卡死 |
 | 图像操作 | Transpose | Resize，AveragePool,MaxPool | |
 
 * LSTM 应该是组合实现的
