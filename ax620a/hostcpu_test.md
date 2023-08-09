@@ -1,3 +1,5 @@
+# megpeak 测试结果
+
 编译选项：-DMEGPEAK_ARMV7=1 -Ofast -g  -DMEGPEAK_ARMV7=1  -mtune=native -mfloat-abi=hard -mfpu=neon -std=gnu++14
 
 padal throughput: 5.411672 ns 0.739143 GFlops latency: 6.405562 ns :

@@ -1,3 +1,5 @@
+模型转换和测速结果：
+
 | model | qps | mac | mac_utils | NEU timecost | efficiency |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | resnetv1c101_8xb32_in1k |  19.00 | 8339777536 | 17.19 | 29355 us | 284101 |
@@ -61,6 +63,7 @@
 | resnetv1d152_8xb32_in1k |  14.14 | 12198914048 | 18.72 | 39361 us | 309924 |
 | resnetv1d101_8xb32_in1k |  19.34 | 8440932352 | 17.72 | 28630 us | 294828 |
 
+resnet 系列运行结果：
 
 | model | qps | mac | mac_utils | NEU timecost | efficiency |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -70,6 +73,7 @@
 | resnet101_8xb32_in1k |  18.99 | 8325326848 | 17.15 | 29384 us | 283329 |
 | resnet152_8xb32_in1k |  13.93 | 12083308544 | 18.27 | 40188 us | 300670 |
 
+转换期间缺少的算子：
 
 | opr | ref |
 | :-: | :-: |
@@ -79,3 +83,17 @@
 | onnx.NonMaxSuppression | 2 |
 | onnx.Range | 1 |
 | onnx.ReduceL1 | 1 |
+
+
+长时间不响应的模型：
+
+* shufflenet-v1-1x_16xb64_in1k    https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmcls/shufflenet-v1-1x-b531c4.onnx  
+* esrgan_psnr-x4c64b23g32_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit/esrgan-5d7744.onnx
+* srgan_x4c64b16_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit/srgan-c767a0.onnx
+* deeplabv3_r50-d8_4xb4-80k_ade20k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/deeplabv3-89cabe.onnx
+* pspnet_r50-d8_4xb4-40k_coco-stuff10k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/pspnet-f667c1.onnx
+* deeplabv3plus_r50-d8_4xb4-160k_ade20k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/deeplabv3plus-cdd5bd.onnx
+* dbnetpp_resnet50_fpnc_1200e_icdar2015	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmocr/dbnetpp-f64ac8.onnx
+* bisenetv2_fcn_4xb4-160k_cityscapes-1024x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/bisenetv2-01f169.onnx
+* inception-v3_8xb32_in1k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmcls/inception-v3-3e3e10.onnx
+* stdc1_in1k-pre_4xb12-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/stdc1-6c428d.onnx
