@@ -85,15 +85,15 @@ resnet 系列运行结果：
 | onnx.ReduceL1 | 1 |
 
 
-长时间不响应的模型：
+长时间不响应的模型，可从硬件模型库搜索下载：
 
-* shufflenet-v1-1x_16xb64_in1k    https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmcls/shufflenet-v1-1x-b531c4.onnx  
-* esrgan_psnr-x4c64b23g32_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit/esrgan-5d7744.onnx
-* srgan_x4c64b16_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit/srgan-c767a0.onnx
-* deeplabv3_r50-d8_4xb4-80k_ade20k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/deeplabv3-89cabe.onnx
-* pspnet_r50-d8_4xb4-40k_coco-stuff10k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/pspnet-f667c1.onnx
-* deeplabv3plus_r50-d8_4xb4-160k_ade20k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/deeplabv3plus-cdd5bd.onnx
-* dbnetpp_resnet50_fpnc_1200e_icdar2015	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmocr/dbnetpp-f64ac8.onnx
-* bisenetv2_fcn_4xb4-160k_cityscapes-1024x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/bisenetv2-01f169.onnx
-* inception-v3_8xb32_in1k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmcls/inception-v3-3e3e10.onnx
-* stdc1_in1k-pre_4xb12-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/stdc1-6c428d.onnx
+* shufflenet-v1-1x_16xb64_in1k 
+* esrgan_psnr-x4c64b23g32_1xb16-1000k_div2k
+* srgan_x4c64b16_1xb16-1000k_div2k
+* deeplabv3_r50-d8_4xb4-80k_ade20k-512x512
+* pspnet_r50-d8_4xb4-40k_coco-stuff10k-512x512
+* deeplabv3plus_r50-d8_4xb4-160k_ade20k-512x512
+* dbnetpp_resnet50_fpnc_1200e_icdar2015
+* bisenetv2_fcn_4xb4-160k_cityscapes-1024x1024
+* inception-v3_8xb32_in1k
+* stdc1_in1k-pre_4xb12-80k_cityscapes-512x1024
