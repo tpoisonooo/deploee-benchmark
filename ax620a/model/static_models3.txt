@@ -1,0 +1,12 @@
+unet-s5-d16_fcn_4xb4-160k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/unet-s5-d16-5c9f10.onnx
+upernet_r50_4xb2-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/upernet-d9b3f4.onnx
+simcc_mobilenetv2_wo-deconv-8xb64-210e_coco-256x192	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmpose/simcc-0d1bf8.onnx
+simcc_res50_8xb64-210e_coco-256x192	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmpose/simcc-fefdab.onnx
+simcc_vipnas-mbv3_8xb64-210e_coco-256x192	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmpose/simcc-722a37.onnx
+esrgan_x4c64b23g32_1xb16-400k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit-superres/esrgan-e4a2ec.onnx
+msrresnet_x4c64b16_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit-superres/msrresnet-e96ff1.onnx
+edsr_x2c64b16_1xb16-300k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit-superres/edsr-c59752.onnx
+rdn_x4c64b16_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit-superres/rdn-b6b092.onnx
+rdn_x2c64b16_1xb16-1000k_div2k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmedit-superres/rdn-d9d0e1.onnx
+mobileone-s0_8xb32_in1k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmcls/mobileone-s0-b6f4a0.onnx
+rtmpose-t_8xb256-420e_coco-256x192	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmpose/rtmpose-t-b3c5f0.onnx

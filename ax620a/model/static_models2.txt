@@ -1,0 +1,6 @@
+emanet_r50-d8_4xb2-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/emanet-9be955.onnx
+encnet_r50-d8_4xb2-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/encnet-9e3a61.onnx
+encnet_r50-d8_4xb4-160k_ade20k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/encnet-1e66f8.onnx
+fast_scnn_8xb4-160k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/fast-e21337.onnx
+fastfcn_r50-d32_jpu_aspp_4xb2-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/fastfcn-37748f.onnx
+fastfcn_r50-d32_jpu_aspp_4xb4-80k_ade20k-512x512	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/fastfcn-113296.onnx

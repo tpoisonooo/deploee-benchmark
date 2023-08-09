@@ -23,6 +23,7 @@ ax620a 算子支持列表 https://pulsar-docs.readthedocs.io/zh_CN/latest/append
 | 遍历 2 次或分段成 1 次 | Softmax | ReduceL2 | 转换卡死 |
 | 图像操作 | Transpose | Resize，AveragePool,MaxPool | |
 
+
 * LSTM 应该是组合实现的
 
 长时间不响应：
@@ -38,14 +39,14 @@ ax620a 算子支持列表 https://pulsar-docs.readthedocs.io/zh_CN/latest/append
 * inception-v3_8xb32_in1k	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmcls/inception-v3-3e3e10.onnx
 * stdc1_in1k-pre_4xb12-80k_cityscapes-512x1024	https://openmmlab-deploee.oss-cn-shanghai.aliyuncs.com/model/mmseg/stdc1-6c428d.onnx
 
-
+8572
 测试数据 1088x1920.h264
-1088 x 1920  2m18.250s   62fps
-720 x 1920   2m18.025s
+1088 x 1920  2m18.250s   62
+720 x 1920   2m18.025s   62.1
 
 测试数据 720x1280.h264
-720 x 1280  2m13.096s
+720 x 1280  2m13.096s    64.4
 
-测试数据 480x640.h264  2m11.005s
+测试数据 480x640.h264  2m11.005s  65.4
 
 不支持 h265
