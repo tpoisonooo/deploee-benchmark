@@ -1,5 +1,5 @@
 # deploee-benchmark
-硬件模型库芯片评测结果和工具
+[硬件模型库](https://platform.openmmlab.com/deploee)芯片评测结果和工具
 
 目录结构
 
