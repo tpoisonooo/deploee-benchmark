@@ -2,6 +2,9 @@
 
 编译选项：-DMEGPEAK_ARMV7=1 -Ofast -g  -DMEGPEAK_ARMV7=1  -mtune=native -mfloat-abi=hard -mfpu=neon -std=gnu++14
 ```bash
+there are 4 cores, currently use core id :0
+
+bandwidth: 1.861453 Gbps
 padal throughput: 5.411672 ns 0.739143 GFlops latency: 6.405562 ns :
 padd throughput: 1.509807 ns 2.649345 GFlops latency: 5.024015 ns :
 mla_s32 throughput: 5.275521 ns 1.516438 GFlops latency: 5.290761 ns :
